@@ -1,0 +1,123 @@
+/* Quiz.css */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.question-container {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-container h2 {
+  color: #00838f;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+
+.option {
+  background-color: #b2ebf2;
+  padding: 12px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #80deea;
+}
+
+.option button {
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.result-container {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h2 {
+  color: #1896a4;
+  margin-bottom: 20px;
+}
+
+.result-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #89aaf8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.result-container button:hover {
+  background-color: #1248c5;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #1248c5;
+  border-radius: 4px;
+  transition: width 0.3s;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .options {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .question-container h2 {
+      font-size: 18px;
+    }
+  
+    .option button {
+      font-size: 14px;
+    }
+  }
+  
+  
